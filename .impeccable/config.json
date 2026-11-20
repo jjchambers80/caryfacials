@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "**/*.html"
+        ],
+        "createdAt": "2026-11-20T22:32:01.548Z",
+        "reason": "Brand commitment: ivory #F8F6F2 is the Román Skin & Body campaign palette recorded in romanskinandbody PRODUCT.md and caryfacials PRODUCT.md"
+      }
+    ]
+  }
+}

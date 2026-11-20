@@ -184,7 +184,7 @@ address { font-style: normal; margin-top: 14px; }
   .who { grid-template-columns: 1fr 1.6fr; align-items: center; gap: 56px; padding-top: 72px; padding-bottom: 72px; }
   .who-photo img { width: 100%; max-width: 380px; margin-left: auto; }
   .visit { grid-template-columns: 1fr 1fr; align-items: stretch; }
-  .visit-photo img { height: 100%; aspect-ratio: auto; }
+  .visit-photo img { height: 100%; aspect-ratio: auto; object-position: 88% 50%; }
   .visit-text { padding: 56px 40px 56px 56px; padding-right: var(--gutter); }
   .cat-head, .cat-photo, .menu { max-width: none; }
   .cat-wrap { display: grid; }
