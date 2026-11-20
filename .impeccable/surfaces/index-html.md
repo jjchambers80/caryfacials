@@ -2,12 +2,12 @@
 version: 1
 slug: "index-html"
 primary_target: "index.html"
-related_targets: ["anti-aging/index.html","all-sensitive-skin/index.html","acne/index.html","advanced-corrective/index.html"]
+related_targets: ["sensitive-skin-facials/index.html","anti-aging-facials/index.html","acne-facials/index.html","corrective-facials/index.html"]
 ---
 
 # Home page (index.html)
 
-Scope: caryfacials.com home page; the four category pages (all-sensitive, anti-aging, congested-acne, advanced-corrective) extend it. Visitor mode: Persuade.
+Scope: caryfacials.com home page; the four category pages (sensitive-skin-facials, anti-aging-facials, acne-facials, corrective-facials) extend it. Visitor mode: Persuade.
 Audience: Cary-area searchers on phones who don't know Román Skin & Body yet. Action: book at romanskinandbody.com, or call.
 Proof: real menu facts (names, minutes, prices), real studio photos, Betty Román's CIDESCO accreditation. No invented reviews.
 
