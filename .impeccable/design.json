@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-20T23:00:00Z",
+  "title": "Design System: caryfacials.com",
+  "extensions": {
+    "colorMeta": {
+      "olive-ink": { "role": "primary", "displayName": "Studio Olive Ink", "canonical": "#5B665C", "tonalRamp": ["#080D08", "#212721", "#3C453D", "#5A645B", "#7B867C", "#9EA89F", "#C3CCC4", "#EAF1EA"] },
+      "olive-ink-deep": { "role": "primary", "displayName": "Studio Olive Ink, pressed", "canonical": "#4A544B" },
+      "olive-brand": { "role": "primary", "displayName": "Studio Olive, brand", "canonical": "#6D796E", "tonalRamp": ["#080D08", "#202721", "#3C453D", "#5A655B", "#7A867B", "#9EA89F", "#C3CCC4", "#E9F1EA"] },
+      "ink": { "role": "secondary", "displayName": "Charcoal Ink", "canonical": "#3D4246", "tonalRamp": ["#090B0D", "#222528", "#3E4346", "#5D6266", "#7E8387", "#A1A6AA", "#C5CACD", "#EBEFF2"] },
+      "ink-deep": { "role": "secondary", "displayName": "Charcoal Ink, pressed", "canonical": "#24282A" },
+      "ivory": { "role": "neutral", "displayName": "Román Ivory", "canonical": "#F8F6F2", "tonalRamp": ["#0C0B0A", "#262523", "#43423F", "#63615E", "#84827F", "#A6A5A2", "#CAC9C6", "#EFEEEC"] },
+      "paper": { "role": "neutral", "displayName": "Card White", "canonical": "#FFFFFF", "tonalRamp": ["#0B0B0B", "#252525", "#424242", "#616161", "#828282", "#A5A5A5", "#C9C9C9", "#EEEEEE"] },
+      "mist": { "role": "neutral", "displayName": "Sage Mist", "canonical": "#E9EDE6", "tonalRamp": ["#0A0C09", "#242622", "#40433E", "#5F625D", "#80847E", "#A3A6A1", "#C7CAC5", "#EDEFEB"] },
+      "rule": { "role": "neutral", "displayName": "Warm Hairline", "canonical": "#D9D4CA", "tonalRamp": ["#0D0B07", "#272520", "#45423B", "#656159", "#868279", "#A8A59D", "#CCC9C2", "#F1EEE8"] },
+      "foot-mist": { "role": "neutral", "displayName": "Footer Mist", "canonical": "#D7DAD3" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Page H1: the home consultation question and category titles." },
+      "headline": { "displayName": "Headline", "purpose": "Section H2, treatment-group and result-panel headings." },
+      "title": { "displayName": "Title", "purpose": "H3 and treatment prices." },
+      "menu-name": { "displayName": "Menu name", "purpose": "Category names on the home menu board." },
+      "wordmark": { "displayName": "Wordmark", "purpose": "Cary Facials in the header." },
+      "body": { "displayName": "Body", "purpose": "Running text, capped near 34 to 44em." },
+      "label": { "displayName": "Label", "purpose": "Buttons, pills, option text, minutes." },
+      "meta": { "displayName": "Meta", "purpose": "Hints, breadcrumbs, notes, footer small print; tabular figures." }
+    },
+    "shadows": [
+      { "name": "card-rest", "value": "0 10px 30px -18px rgba(61, 66, 70, .35)", "purpose": "The consultation card only; the one lifted surface." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(.16, 1, .3, 1)", "purpose": "House ease for every transition and the result rise." },
+      { "name": "state", "value": "200ms to 250ms", "purpose": "Background and color changes on buttons and options." },
+      { "name": "rise", "value": "450ms, from opacity 0, translateY(10px), blur(2px)", "purpose": "Result panel entering when a goal is chosen. Disabled under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "600px" },
+      { "name": "lg", "value": "900px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Olive Book button on ivory: visit block and category heads.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Book a facial</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 24px; background: #5B665C; color: #fff; font: 500 1.0625rem/1.6 Jost, Futura, 'Avenir Next', system-ui, sans-serif; text-decoration: none; border-radius: 2px; transition: background-color .2s cubic-bezier(.16, 1, .3, 1); } .ds-btn:hover { background: #4A544B; } .ds-btn:focus-visible { outline: 3px solid #5B665C; outline-offset: 3px; }"
+    },
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Charcoal Book button used inside the olive result panel.",
+      "html": "<a class=\"ds-btn-ink\" href=\"#\">Book a facial</a>",
+      "css": ".ds-btn-ink { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 24px; background: #3D4246; color: #fff; font: 500 1.0625rem/1.6 Jost, Futura, 'Avenir Next', system-ui, sans-serif; text-decoration: none; border-radius: 2px; transition: background-color .2s cubic-bezier(.16, 1, .3, 1); } .ds-btn-ink:hover { background: #24282A; } .ds-btn-ink:focus-visible { outline: 3px solid #5B665C; outline-offset: 3px; }"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Outlined secondary action beside a primary: Call, Get directions.",
+      "html": "<a class=\"ds-btn-line\" href=\"#\">Get directions</a>",
+      "css": ".ds-btn-line { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 24px; background: transparent; color: #3D4246; border: 1px solid #3D4246; font: 500 1.0625rem/1.6 Jost, Futura, 'Avenir Next', system-ui, sans-serif; text-decoration: none; border-radius: 2px; transition: background-color .2s cubic-bezier(.16, 1, .3, 1); } .ds-btn-line:hover { background: #E9EDE6; } .ds-btn-line:focus-visible { outline: 3px solid #5B665C; outline-offset: 3px; }"
+    },
+    {
+      "name": "Header Bar",
+      "kind": "nav",
+      "refersTo": "pill",
+      "description": "Sticky ivory header: wordmark with byline, outline Call pill and solid Book pill.",
+      "html": "<header class=\"ds-bar\"><a class=\"ds-mark\" href=\"#\"><span class=\"ds-mark-name\">Cary Facials</span><span class=\"ds-mark-by\">by Román Skin &amp; Body</span></a><div class=\"ds-bar-actions\"><a class=\"ds-pill\" href=\"#\">Call</a><a class=\"ds-pill ds-pill-solid\" href=\"#\">Book</a></div></header>",
+      "css": ".ds-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 16px; background: rgba(248, 246, 242, .94); border-bottom: 1px solid #D9D4CA; color: #3D4246; font-family: Jost, Futura, 'Avenir Next', system-ui, sans-serif; } .ds-mark { display: flex; flex-direction: column; text-decoration: none; color: inherit; line-height: 1.1; } .ds-mark-name { font: 600 1.45rem/1 Cormorant, 'Cormorant Garamond', Georgia, serif; } .ds-mark-by { font-size: .78rem; color: #5B665C; letter-spacing: .02em; } .ds-bar-actions { display: flex; gap: 8px; } .ds-pill { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid #3D4246; border-radius: 999px; text-decoration: none; color: #3D4246; font-weight: 500; font-size: .95rem; } .ds-pill:hover { background: #E9EDE6; } .ds-pill-solid { background: #3D4246; color: #fff; } .ds-pill-solid:hover { background: #2B2F32; } .ds-pill:focus-visible { outline: 3px solid #5B665C; outline-offset: 3px; }"
+    },
+    {
+      "name": "Consultation Card",
+      "kind": "custom",
+      "refersTo": "consult-card",
+      "description": "Signature: white intake card with single-choice goal rows; the chosen row and its result panel fill olive.",
+      "html": "<div class=\"ds-card\"><label class=\"ds-opt\"><input type=\"radio\" name=\"ds-goal\" checked><span class=\"ds-opt-text\">Calm and hydrate</span><span class=\"ds-opt-hint\">All &amp; sensitive skin</span></label><label class=\"ds-opt\"><input type=\"radio\" name=\"ds-goal\"><span class=\"ds-opt-text\">Firm and lift</span><span class=\"ds-opt-hint\">Anti-aging</span></label><div class=\"ds-result\"><h2 class=\"ds-result-h\">All &amp; sensitive skin facials</h2><ul class=\"ds-mini\"><li><span>Kiss of Rose Facial</span><span class=\"ds-mini-meta\">90 min · $165</span></li></ul></div></div>",
+      "css": ".ds-card { background: #fff; border: 1px solid #D9D4CA; box-shadow: 0 10px 30px -18px rgba(61, 66, 70, .35); color: #3D4246; font: 400 1.0625rem/1.6 Jost, Futura, 'Avenir Next', system-ui, sans-serif; } .ds-opt { position: relative; display: flex; align-items: baseline; justify-content: space-between; gap: 12px; min-height: 52px; padding: 13px 16px 13px 48px; border-bottom: 1px solid #D9D4CA; cursor: pointer; transition: background-color .25s cubic-bezier(.16, 1, .3, 1), color .25s cubic-bezier(.16, 1, .3, 1); } .ds-opt input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; } .ds-opt::before { content: ''; position: absolute; left: 16px; top: 50%; translate: 0 -50%; width: 18px; height: 18px; border: 1.5px solid #3D4246; border-radius: 50%; } .ds-opt-text { font-weight: 500; } .ds-opt-hint { font-size: .85rem; color: #5B665C; text-align: right; } .ds-opt:hover { background: #E9EDE6; } .ds-opt:has(input:checked) { background: #5B665C; color: #fff; } .ds-opt:has(input:checked) .ds-opt-hint { color: #E9EDE6; } .ds-opt:has(input:checked)::before { border-color: #fff; background: radial-gradient(circle, #fff 0 4px, transparent 5px); } .ds-opt:has(input:focus-visible) { outline: 3px solid #3D4246; outline-offset: -3px; } .ds-result { background: #5B665C; color: #fff; padding: 18px 16px 20px; } .ds-result-h { font: 500 1.9rem/1.05 Cormorant, 'Cormorant Garamond', Georgia, serif; letter-spacing: -0.01em; margin: 0; } .ds-mini { list-style: none; padding: 0; margin: 10px 0 0; } .ds-mini li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 8px 0; border-top: 1px solid rgba(255, 255, 255, .28); } .ds-mini-meta { white-space: nowrap; font-variant-numeric: tabular-nums; color: #E9EDE6; font-size: .95rem; }"
+    },
+    {
+      "name": "Menu Board Row",
+      "kind": "custom",
+      "refersTo": "menu-name",
+      "description": "Category list row on charcoal hairlines: Cormorant name over olive tabular facts.",
+      "html": "<ul class=\"ds-board\"><li><a class=\"ds-board-row\" href=\"#\"><span class=\"ds-board-name\">Anti-aging facials</span><span class=\"ds-board-meta\"><span>8 treatments</span><span>45–90 min</span><span>$155–$175</span></span></a></li></ul>",
+      "css": ".ds-board { list-style: none; padding: 0; margin: 0; border-bottom: 1px solid #3D4246; color: #3D4246; font: 400 1.0625rem/1.6 Jost, Futura, 'Avenir Next', system-ui, sans-serif; } .ds-board-row { display: block; padding: 18px 0; border-top: 1px solid #3D4246; text-decoration: none; color: inherit; } .ds-board-name { display: block; font: 500 clamp(1.9rem, 5vw, 2.6rem)/1.05 Cormorant, 'Cormorant Garamond', Georgia, serif; } .ds-board-row:hover .ds-board-name { text-decoration: underline; text-decoration-thickness: 1px; } .ds-board-row:focus-visible { outline: 3px solid #5B665C; outline-offset: 3px; } .ds-board-meta { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 4px; color: #5B665C; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Treatment Row",
+      "kind": "card",
+      "refersTo": "title",
+      "description": "Category-page treatment: name and Cormorant price on one baseline, olive minutes, copy, Book link.",
+      "html": "<div class=\"ds-tx\"><div class=\"ds-tx-head\"><h3 class=\"ds-tx-name\">Hydra Peel</h3><p class=\"ds-tx-price\">$155</p></div><p class=\"ds-tx-time\">45 min</p><p>Exfoliates, resurfaces, moisturizes and renews the skin.</p><a class=\"ds-tx-book\" href=\"#\">Book Hydra Peel</a></div>",
+      "css": ".ds-tx { padding: 22px 0; border-bottom: 1px solid #D9D4CA; color: #3D4246; font: 400 1.0625rem/1.6 Jost, Futura, 'Avenir Next', system-ui, sans-serif; } .ds-tx p { margin: 0; max-width: 40em; } .ds-tx-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; } .ds-tx-name { margin: 0; font: 500 1.6rem/1.1 Cormorant, 'Cormorant Garamond', Georgia, serif; letter-spacing: -0.01em; } .ds-tx-price { font: 500 1.6rem/1 Cormorant, 'Cormorant Garamond', Georgia, serif; white-space: nowrap; } .ds-tx-time { margin: 4px 0 8px !important; color: #5B665C; font-weight: 500; } .ds-tx-book { display: inline-flex; align-items: center; min-height: 44px; margin-top: 8px; font-weight: 500; color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px; } .ds-tx-book:hover { text-decoration-thickness: 2px; } .ds-tx-book:focus-visible { outline: 3px solid #5B665C; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Consultation Card",
+    "overview": "The site behaves like the intake card an esthetician hands a new client: a white sheet on an ivory counter, ruled with warm hairlines, where the client marks one answer and the matching care appears beneath it. Everything else is the printed spa menu that follows: treatment names set large in Cormorant, minutes and prices in plain tabular figures, hairlines between rows. The palette and type are the Román Skin & Body identity (ivory, olive, charcoal; Cormorant over Jost), carried over from the spa's own site rather than reinvented.\n\nDensity is calm but not sparse. Pages are single-column on phones, with the booking action in reach in every section, and open to two columns at 900px. Depth comes from hairlines and tonal panels, not shadow; only the consultation card lifts. Photography is always the studio's own: its entrance, Betty Román's facial room, Betty herself, a facial in progress, and the house product line.",
+    "keyCharacteristics": [
+      "Ivory ground, white card, olive answer: three surface tones carry the whole hierarchy.",
+      "Menu-board structure: charcoal hairlines over treatment rows, Cormorant names, tabular minutes and prices.",
+      "One lifted surface (the consultation card); everything else is flat.",
+      "Square cards and photos, 2px buttons, full pills only in the header.",
+      "A single motion: the result panel rises and fades in when a goal is chosen."
+    ],
+    "rules": [
+      { "name": "The Text Olive Rule", "body": "Any olive at text size, or any olive fill behind white text, is `olive-ink` (5.6:1 on ivory, 6:1 under white). The brand olive is for large display type and ornament only.", "section": "colors" },
+      { "name": "The Two Hairlines Rule", "body": "Warm `rule` divides soft content (card rows, treatment rows, tables). Charcoal `ink` draws the menu board: category list rows, treatment-group headings, other-facial links. Never mix the two in one list.", "section": "colors" },
+      { "name": "The Tabular Facts Rule", "body": "Every minute count and price range uses tabular figures and does not wrap (`white-space: nowrap`), so menu columns align and a price never breaks from its unit.", "section": "typography" },
+      { "name": "The One Sheet Rule", "body": "Only the consultation card is lifted. Panels, photos, buttons and menu rows stay flat.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** set small olive text and every olive fill in `olive-ink` (#5B665C); keep the brand olive (#6D796E) for large type and ornament.",
+      "**Do** set prices in Cormorant and every minute and price figure in tabular numerals, unwrapped.",
+      "**Do** separate content with 1px hairlines: warm `rule` for soft rows, charcoal `ink` for the menu board.",
+      "**Do** keep a Book action (olive or charcoal button, or the header pill) reachable in every section, with 44px minimum targets.",
+      "**Do** use only the studio's own photographs and product shots, and record each new raster's source in this file.",
+      "**Do** honor `prefers-reduced-motion`: the build disables every animation and transition under it."
+    ],
+    "donts": [
+      "**Don't** set olive text or olive fills behind white text in the brand olive (#6D796E); it fails WCAG AA at text size.",
+      "**Don't** add shadows beyond the consultation card's single soft ambient.",
+      "**Don't** round cards, panels or photos; the 999px pill belongs only to the header actions.",
+      "**Don't** place the olive button inside the olive result panel; use the charcoal button there.",
+      "**Don't** use stock or AI-generated imagery, or invented reviews and ratings."
+    ]
+  }
+}
