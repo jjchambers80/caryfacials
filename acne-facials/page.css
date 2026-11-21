@@ -1,0 +1,81 @@
+/* Acne page: extends /style.css (shared header, hero, dock, sections). Only page-specific parts live here. */
+
+/* Picker */
+.pick-lede { margin-top: -16px; }
+.chips { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px; max-width: 880px; }
+.chips input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.chips label {
+  min-height: 44px; display: inline-flex; align-items: center; padding: 0 20px;
+  border-radius: 999px; background: var(--white); box-shadow: inset 0 0 0 1px var(--line);
+  font-weight: 500; cursor: pointer; transition: background-color .2s var(--ease), color .2s var(--ease);
+}
+.chips label:hover { box-shadow: inset 0 0 0 1px var(--olive); }
+.chips input:checked + label { background: var(--olive); color: var(--white); box-shadow: none; }
+.chips input:focus-visible + label { outline: 2px solid var(--ink-deep); outline-offset: 3px; }
+.answer {
+  display: none; flex-basis: 100%; margin-top: 12px; gap: 10px;
+  padding: 24px; border-radius: var(--r);
+  background: #DCE3D8; border: 1px solid #CCD5C8;
+  box-shadow: 0 12px 40px rgb(91 102 92 / .12);
+}
+.answer .facts { font-family: var(--serif); font-size: 1.5rem; color: var(--ink-deep); font-variant-numeric: tabular-nums; }
+.answer .facts span { font: 500 0.95rem var(--sans); color: var(--olive-text); margin-left: 10px; }
+.answer p:last-child { max-width: 34em; }
+.chips:has(#c-oil:checked) [data-for="c-oil"],
+.chips:has(#c-rough:checked) [data-for="c-rough"],
+.chips:has(#c-quick:checked) [data-for="c-quick"] { display: grid; }
+
+/* Menu */
+.menu-lede { margin-top: -12px; max-width: 40em; }
+.menu-grid { display: grid; gap: 40px; margin-top: 36px; }
+.group-h { font: 600 1rem/1.4 var(--sans); color: var(--olive-text); letter-spacing: 0; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.item { padding-top: 24px; }
+.item h4 { margin: 0; font: 500 1.6rem/1.1 var(--serif); color: var(--ink-deep); letter-spacing: -0.01em; text-wrap: balance; }
+.item .pop-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.item .price { font-family: var(--serif); font-size: 1.6rem; color: var(--ink-deep); font-variant-numeric: tabular-nums; }
+.item .mins { color: var(--olive-text); font-weight: 500; font-size: 0.95rem; margin: 4px 0 8px; }
+.item > p:not(.mins) { max-width: 34em; }
+.menu-img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--r); margin-top: 32px; }
+
+/* FAQ */
+.faq .wrap { max-width: 840px; }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+  list-style: none; cursor: pointer; position: relative;
+  min-height: 56px; padding: 16px 40px 16px 0;
+  font-weight: 500; line-height: 1.3; color: var(--ink-deep);
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::before, .faq summary::after {
+  content: ""; position: absolute; right: 6px; top: 50%;
+  width: 14px; height: 1.5px; background: var(--olive);
+  transition: transform .2s var(--ease);
+}
+.faq summary::after { transform: rotate(90deg); }
+.faq details[open] summary::after { transform: rotate(0deg); }
+.faq details p { padding-bottom: 20px; max-width: 40em; }
+
+/* Footer extras */
+.crumbs ol { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; font-size: .9rem; color: var(--olive-text); }
+.crumbs li + li::before { content: "/"; margin-right: 8px; }
+.foot-h { font-weight: 600; color: var(--ink-deep); margin-bottom: 6px; }
+.foot-links ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.foot-links span { color: var(--olive-text); margin-left: 4px; font-variant-numeric: tabular-nums; }
+.foot-policy { color: var(--olive-text); max-width: 46em; }
+.foot-policy a { color: var(--ink-deep); }
+
+@media (min-width: 1024px) {
+  .answer { padding: 32px 36px; }
+  .menu-grid { grid-template-columns: 1fr 1fr; gap: 72px; }
+  .foot-policy { grid-column: 1 / -1; }
+}
+
+/* Three treatments sit beside one photo instead of two groups */
+.menu-photo { align-self: start; }
+.menu-photo .menu-img { margin-top: 24px; aspect-ratio: 4 / 5; }
+.pack { margin-top: 10px; font-weight: 500; color: var(--ink-deep); font-variant-numeric: tabular-nums; }
+@media (min-width: 1024px) {
+  .menu-grid { grid-template-columns: 1.15fr .85fr; }
+  .menu-photo { position: sticky; top: 96px; }
+  .menu-photo .menu-img { margin-top: 0; }
+}

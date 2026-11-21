@@ -16,7 +16,7 @@
         "rule": "cramped-padding",
         "value": "*",
         "files": [
-          "lp/index.html"
+          "index.html"
         ],
         "createdAt": "2026-11-21T20:18:24.121Z",
         "reason": "Claude triage: .sec is a full-bleed band with padding-block; inline inset comes from child .wrap gutter (verified 20px at 400px viewport)"
@@ -61,10 +61,46 @@
         "rule": "marquee",
         "value": "*",
         "files": [
-          "lp/index.html"
+          "index.html"
         ],
         "createdAt": "2026-11-21T20:40:40.627Z",
         "reason": "User requested the subtle left-to-right shimmer on the dock booking button (2026-11-21 session)"
+      },
+      {
+        "rule": "marquee",
+        "value": "*",
+        "files": [
+          "anti-aging-facials/index.html"
+        ],
+        "createdAt": "2026-11-21T21:56:24.526Z",
+        "reason": "user requested: sticky booking pill light sweep copied from lp/ homepage; one pass per 6.5s, disabled under reduced motion; no scrolling content"
+      },
+      {
+        "rule": "marquee",
+        "value": "*",
+        "files": [
+          "sensitive-skin-facials/index.html"
+        ],
+        "createdAt": "2026-11-21T21:57:29.670Z",
+        "reason": "False positive: nothing auto-scrolls; the only looping motion is the sticky Book button's light sweep, which the user asked for (matching /lp/), and the credentials strip is a swipeable row, not animated."
+      },
+      {
+        "rule": "marquee",
+        "value": "*",
+        "files": [
+          "acne-facials/index.html"
+        ],
+        "createdAt": "2026-11-21T22:06:00.000Z",
+        "reason": "user requested: sticky booking pill light sweep copied from lp/ homepage; disabled under reduced motion; nothing auto-scrolls"
+      },
+      {
+        "rule": "marquee",
+        "value": "*",
+        "files": [
+          "corrective-facials/index.html"
+        ],
+        "createdAt": "2026-11-21T22:07:54.247Z",
+        "reason": "user requested: sticky booking pill shimmer copied from lp/ homepage; disabled under reduced motion; nothing auto-scrolls (credentials row is swipeable, not animated)"
       }
     ]
   }
