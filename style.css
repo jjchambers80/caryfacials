@@ -158,6 +158,14 @@ address { font-style: normal; margin-top: 14px; }
 .more a { display: flex; justify-content: space-between; gap: 12px; padding: 14px 0; border-top: 1px solid var(--ink); font: 500 1.5rem/1.1 var(--display); text-decoration: none; }
 .more a span { font: 400 1rem/1.6 var(--body); color: var(--olive-ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .more a:hover { text-decoration: underline; }
+.faq { padding: 40px var(--gutter); max-width: calc(760px + 2 * var(--gutter)); }
+.faq h2 { padding-bottom: 8px; border-bottom: 1px solid var(--ink); }
+.faq details { border-bottom: 1px solid var(--rule); }
+.faq summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 44px; padding: 16px 0; font: 500 1.4rem/1.2 var(--display); cursor: pointer; list-style: none; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font: 400 1.6rem/1 var(--body); color: var(--olive-ink); }
+.faq details[open] summary::after { content: "\2212"; }
+.faq details p { max-width: 40em; padding-bottom: 18px; }
 
 /* Footer */
 .foot { background: var(--ink); color: #fff; padding: 40px var(--gutter) 48px; }
