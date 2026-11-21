@@ -16,7 +16,7 @@ People in and around Cary, NC searching Google for a facial ("facials cary nc", 
 caryfacials.com is a local landing site that ranks for facial searches in Cary and sends visitors to book at Román Skin & Body. It has a home page about facials in Cary and four category pages (All & Sensitive Skin, Anti-Aging, Congested & Acne, Advanced Corrective). Success means booking clicks to https://www.romanskinandbody.com/pages/book-appointment and calls to the spa.
 
 ## Positioning
-Facials performed by estheticians at an independent Cary skin care studio led by Betty Román, CIDESCO-accredited and co-founder of the North Carolina Esthetician Association. Treatments use Guinot (including the patented Hydradermie) and the Román Skin house line. Skin care only: no massage.
+Facials performed by Betty Román at her independent Cary skin care studio. Site brand: "Cary Facials by Betty Román"; the business (NAP, schema, Google profile) stays Román Skin & Body. Betty is CIDESCO-accredited and co-founder of the North Carolina Esthetician Association. Treatments use Guinot (including the patented Hydradermie) and the Román Skin house line. Skin care only: no massage.
 
 ## Operating Context
 - Bookings happen in Salon Iris via romanskinandbody.com; this site never takes bookings itself.
@@ -30,7 +30,7 @@ Facials performed by estheticians at an independent Cary skin care studio led by
 - Acne facials work alongside medical care, not in place of it.
 
 ## Brand Commitments
-- Customer-facing name: **Román Skin & Body**, with the accent.
+- Site brand: **Cary Facials by Betty Román** (titles, wordmark, H1). Business name: **Román Skin & Body**, with the accent (NAP, schema, booking).
 - Spa identity from romanskinandbody.com: Cormorant 500 headings, Jost body, olive #6D796E, ivory #F8F6F2, charcoal #3D4246.
 
 ## Evidence on Hand

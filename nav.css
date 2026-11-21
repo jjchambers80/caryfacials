@@ -47,7 +47,7 @@
   .nav-btn span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 }
 
-.mark, .logo { flex: none; }
+.mark { flex: none; }
 
 /* Narrow desktop: five links + logo + both pills don't fit, so the header Call pill waits until 1280px. */
 @media (min-width: 1024px) and (max-width: 1279px) {

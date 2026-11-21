@@ -89,11 +89,9 @@ p { margin: 0; text-wrap: pretty; }
   border-bottom: 1px solid var(--line);
 }
 .top-in { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 12px; }
-.logo img { height: 30px; width: auto; }
 .mark { display: flex; flex-direction: column; text-decoration: none; line-height: 1.1; color: var(--ink); }
 .mark-name { font: 600 1.45rem/1 var(--serif); }
 .mark-by { font-size: .78rem; color: var(--olive-text); letter-spacing: .02em; }
-.hero-logo { display: block; height: 44px; width: auto; margin-bottom: 18px; }
 .top-actions { display: flex; gap: 10px; }
 .top .pill { min-height: 44px; padding: 0 18px; }
 .hide-sm { display: none; }
@@ -204,8 +202,9 @@ h3 { font-size: 1.75rem; }
 /* Footer */
 .foot { border-top: 1px solid var(--line); padding: 40px 0 120px; font-size: 0.95rem; }
 .foot-in { display: grid; gap: 20px; }
-.foot .logo img { height: 34px; }
 .foot a { text-underline-offset: 3px; }
+.foot .logo { justify-self: start; }
+.foot .logo img { display: block; height: 34px; width: auto; }
 
 /* Mobile booking dock */
 .dock {
@@ -269,7 +268,6 @@ h3 { font-size: 1.75rem; }
 /* Desktop */
 @media (min-width: 1024px) {
   :root { --gutter: 40px; --sec: 96px; }
-  .logo img { height: 36px; }
   .top-in { height: 72px; }
   .hide-sm { display: inline-flex; }
   .dock { display: none; }

@@ -206,6 +206,8 @@ p { margin: 0; }
 /* Footer */
 .foot { border-top: 1px solid var(--rule); padding-block: 40px 48px; font-size: .95rem; }
 .foot-in { display: grid; gap: 28px; }
+.foot .logo { justify-self: start; grid-column: 1 / -1; }
+.foot .logo img { display: block; height: 34px; width: auto; }
 .foot-h { font-weight: 500; color: var(--ink-deep); margin-bottom: 8px; }
 .foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .foot ul a { color: var(--ink); }
