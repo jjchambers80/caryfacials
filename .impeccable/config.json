@@ -11,6 +11,15 @@
         ],
         "createdAt": "2026-11-20T22:32:01.548Z",
         "reason": "Brand commitment: ivory #F8F6F2 is the Román Skin & Body campaign palette recorded in romanskinandbody PRODUCT.md and caryfacials PRODUCT.md"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "lp/index.html"
+        ],
+        "createdAt": "2026-11-21T20:18:24.121Z",
+        "reason": "Claude triage: .sec is a full-bleed band with padding-block; inline inset comes from child .wrap gutter (verified 20px at 400px viewport)"
       }
     ]
   }
