@@ -20,6 +20,51 @@
         ],
         "createdAt": "2026-11-21T20:18:24.121Z",
         "reason": "Claude triage: .sec is a full-bleed band with padding-block; inline inset comes from child .wrap gutter (verified 20px at 400px viewport)"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "acne-facials/index.html"
+        ],
+        "createdAt": "2026-11-21T20:40:40.472Z",
+        "reason": "Claude triage: .more band has padding-inline var(--gutter) (computed 40px at 1280, 16px mobile); text is inset, detector misreads band padding"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "anti-aging-facials/index.html"
+        ],
+        "createdAt": "2026-11-21T20:40:40.509Z",
+        "reason": "Claude triage: .more band has padding-inline var(--gutter) (computed 40px at 1280, 16px mobile); text is inset, detector misreads band padding"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "corrective-facials/index.html"
+        ],
+        "createdAt": "2026-11-21T20:40:40.546Z",
+        "reason": "Claude triage: .more band has padding-inline var(--gutter) (computed 40px at 1280, 16px mobile); text is inset, detector misreads band padding"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "sensitive-skin-facials/index.html"
+        ],
+        "createdAt": "2026-11-21T20:40:40.587Z",
+        "reason": "Claude triage: .more band has padding-inline var(--gutter) (computed 40px at 1280, 16px mobile); text is inset, detector misreads band padding"
+      },
+      {
+        "rule": "marquee",
+        "value": "*",
+        "files": [
+          "lp/index.html"
+        ],
+        "createdAt": "2026-11-21T20:40:40.627Z",
+        "reason": "User requested the subtle left-to-right shimmer on the dock booking button (2026-11-21 session)"
       }
     ]
   }
