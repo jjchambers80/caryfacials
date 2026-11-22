@@ -288,7 +288,7 @@ h3 { font-size: 1.75rem; }
 
   .needs { grid-template-columns: 1.25fr 1fr 1fr; grid-template-rows: auto auto; gap: 20px; }
   .need-photo { grid-column: 1; grid-row: 1 / span 2; }
-  .need-photo img { aspect-ratio: auto; flex: 1; min-height: 260px; }
+  .need-photo img { aspect-ratio: auto; flex: 1; min-height: 260px; border-radius: var(--r); }
   .need-photo { display: flex; flex-direction: column; }
   .need-wide { grid-column: 2 / span 2; grid-row: 2; }
   .need { padding: 28px; }
